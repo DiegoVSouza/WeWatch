@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { lazy, useEffect, useState } from "react";
 import { api } from "../services/api";
 import { MovieCard } from "./MovieCard";
 import { SideBar } from "./SideBar";
@@ -21,6 +21,7 @@ interface MovieProps {
   }>;
   Runtime: string;
 }
+
 
 export function Content() {
 
